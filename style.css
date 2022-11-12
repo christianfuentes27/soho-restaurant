@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Waterfall&family=WindSong&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Montserrat:wght@100;200;300;400&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Waterfall&family=WindSong&display=swap');
 
 @font-face {
     font-family: BabaPro;
@@ -10,18 +10,22 @@ html, body {
 }
 
 body {
-    background-color: black;
+    background-color: white;
     margin: 0;
     -webkit-tap-highlight-color: transparent;
+    font-family: 'Red Hat Display';
 }
 
 /*-------------------------------------------------------------------------- HOME */
+
+/*------------------------------------------------------------ HERO SECTION --*/
 .hero {
     height: 100%;
-    background-image: url(img/home/hero/hero.jpg);
+    background-image: url(img/home/hero/hero-mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    position: relative;
 }
 
 header {
@@ -44,7 +48,6 @@ header {
 
 .navbar {
     position: relative;
-    font-family: 'Red Hat Display';
 }
 
 .menu-items {
@@ -59,9 +62,10 @@ header {
     height: calc(100vh - 80px);
     list-style-type: none;
     text-align: center;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, .9);
     transform: translateX(100%);
     transition: all .5s ease-in-out;
+    z-index: 9999;
 }
 
 .open {
@@ -92,7 +96,7 @@ header {
 }
 
 .menu-btn-bars {
-    width: 50px;
+    width: 45px;
     height: 4px;
     background: white;
     border-radius: 5px;
@@ -103,7 +107,7 @@ header {
 .menu-btn-bars::after {
     content: '';
     position: absolute;
-    width: 50px;
+    width: 45px;
     height: 4px;
     background: white;
     border-radius: 5px;
@@ -111,11 +115,11 @@ header {
 }
 
 .menu-btn-bars::before {
-    transform: translateY(-16px);
+    transform: translateY(-14px);
 }
 
 .menu-btn-bars::after {
-    transform: translateY(16px);
+    transform: translateY(14px);
 }
 
 .cross .menu-btn-bars {
@@ -129,4 +133,86 @@ header {
 
 .cross .menu-btn-bars::after {
     transform: rotate(-45deg) translate(35px, 35px);
+}
+
+/*------------------------------- HERO ITEMS */
+
+.hero-items {
+    color: white;
+    margin-left: 30px;
+    position: absolute;
+    text-align: right;
+    margin-top: 30px;
+    right: 15px;
+}
+
+.hero-items h4 {
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.hero-items h6 {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.order-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid rgba(222, 151, 20, .5);
+    font-weight: 100;
+    font-size: 12px;
+    margin-left: auto;
+    transition: all .5s ease-in-out;
+}
+
+.order-btn:hover {
+    background-color: #de9714;
+}
+
+/*------------------------------------------------------------ WELCOME --*/
+.welcome {
+    height: 100%;
+    width: 100%;
+}
+
+.welcome-title {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.welcome-title::before {
+    height: 100px;
+    width: 25%;
+    border-bottom: 1px solid #de9714;
+}
+
+.welcome-title .logo {
+    font-size: 30px;
+    color: black;
+    margin: 0;
+}
+
+.welcome-title .logo span {
+    height: 50px;
+}
+
+.welcome-title h4 {
+    font-size: 24px;
+    font-weight: 200;
+    margin: 0;
+}
+
+.welcome-title p {
+    font-family: Montserrat, sans-serif;
+    font-weight: 200;
+    letter-spacing: 3px;
+    margin: 0;
 }
