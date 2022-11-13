@@ -626,7 +626,6 @@ footer {
 /*------------------------------------------------------------ MATTER OF COOKING --*/
 .matter-cooking {
     width: 100%;
-    background-color: antiquewhite;
 }
 
 .cooking-title {
@@ -685,3 +684,30 @@ footer {
 .cooking-team {
     background-image: url(img/team/cooking/kitchen-team.jpg);
 }
+
+/*------------------------------------------------------------ EVERY DETAIL COUNTS --*/
+.every-detail {
+    background-image: url(img/team/every-detail/evey-detail.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 25% 50%;
+
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+
+.detail-text {
+    position: absolute;
+    bottom: 65px;
+    left: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.detail-text span {
+    color: #de9714;
+}
+
