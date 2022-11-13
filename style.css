@@ -611,16 +611,16 @@ footer {
 }
 
 .team-items h4 {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 200;
     margin: 20px 0;
 }
 
 .team-items h6 {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 200;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 /*------------------------------------------------------------ MATTER OF COOKING --*/
@@ -647,7 +647,7 @@ footer {
 
 .cooking-title h4 {
     margin: 0;
-    font-size: 35px;
+    font-size: 28px;
     font-weight: 200;
 }
 
@@ -663,7 +663,7 @@ footer {
 }
 
 .cooking-content p {
-    font-size: 16px;
+    font-size: 15px;
     color: #474747;
     text-align: justify;
 }
@@ -699,10 +699,10 @@ footer {
 
 .detail-text {
     position: absolute;
-    bottom: 65px;
-    left: 50px;
+    bottom: 55px;
+    left: 45px;
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 300;
     letter-spacing: 2px;
 }
@@ -711,3 +711,177 @@ footer {
     color: #de9714;
 }
 
+/*------------------------------------------------------------ MEET THE CHEF --*/
+.chef {
+    height: auto;
+    width: 100%;
+}
+
+.chef-title {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
+}
+
+.chef-title::after {
+    position: absolute;
+    content: "";
+    width: 30%;
+    bottom: -12px;
+    left: 110px;
+    border-bottom: 1px solid #de9714;
+}
+
+.chef-title h4 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 200;
+}
+
+.chef-content {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.chef-content p {
+    text-align: justify;
+    color: #474747;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.chef-img {
+    background-image: url(img/team/chef/chef-3.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 220px;
+}
+
+.chef-signature {
+    font-family: Waterfall, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/*------------------------------------------------------------ ALL STAFF --*/
+.staff {
+    width: 100%;
+    height: auto;
+}
+
+.staff-title {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
+}
+
+.staff-title::after {
+    position: absolute;
+    content: "";
+    width: 30%;
+    bottom: -12px;
+    left: 110px;
+    border-bottom: 1px solid #de9714;
+}
+
+.staff-title h4 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 200;
+}
+
+.staff-container {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+.staff-item {
+    box-sizing: border-box;
+    height: 350px;
+    width: 320px;
+    margin-bottom: 50px;
+}
+
+.upside-part {
+    height: 30%;
+    background-color: black;
+}
+
+.middle-part {
+    box-sizing: border-box;
+    position: relative;
+    height: 55%;
+    border-left: 1px solid #474747;
+    border-right: 1px solid #474747;
+}
+
+.down-part {
+    height: 15%;
+    background-color: #b5b5b5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.staff-img {
+    position: absolute;
+    top: -65px;
+    left: 95px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.staff-description {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.staff-description h6 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #de9714;
+}
+
+.staff-description p {
+    font-size: 16px;
+}
+
+.staff1 {
+    background-image: url(img/team/staff/staff-1.jpg);
+}
+
+.staff2 {
+    background-image: url(img/team/staff/staff-2.jpg);
+}
+
+.staff3 {
+    background-image: url(img/team/staff/staff-3.jpg);
+}
+
+.staff4 {
+    background-image: url(img/team/staff/staff-4.jpg);
+}
+
+.down-part img {
+    color: #fff;
+    height: 20px;
+    margin: 0 20px;
+}
