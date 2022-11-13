@@ -313,7 +313,7 @@ header {
 
 .our-restaurant-content {
     height: auto;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 .restaurant-img {
@@ -340,4 +340,44 @@ header {
 
 .restaurant4 {
     background-image: url(img/home/our-restaurant/alcohol.jpg);
+}
+
+.know-menu {
+    background-image: url(img/home/know-menu/wine.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* background-attachment: fixed; */
+
+    height: 300px;
+    width: 100%;
+}
+
+.know-content {
+    position: absolute;
+    top: 100px;
+    right: 75px;
+}
+
+.know-menu-text {
+    color: #fff;
+    text-align: center;
+    font-weight: 100;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.view-now-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 50px;
+    background-color: black;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
