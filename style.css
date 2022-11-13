@@ -177,8 +177,9 @@ header {
 
 /*------------------------------------------------------------ WELCOME --*/
 .welcome {
-    height: 100%;
+    height: auto;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .welcome-title {
@@ -186,26 +187,27 @@ header {
     width: 50%;
     text-align: center;
     position: relative;
+    padding-top: 30px;
 }
 
-.welcome-title::before {
-    height: 100px;
-    width: 25%;
+.welcome-title::after {
+    position: absolute;
+    content: "";
+    width: 40%;
+    bottom: -12px;
+    left: 55px;
     border-bottom: 1px solid #de9714;
 }
 
 .welcome-title .logo {
-    font-size: 30px;
+    height: 60px;
+    font-size: 42px;
     color: black;
     margin: 0;
 }
 
-.welcome-title .logo span {
-    height: 50px;
-}
-
 .welcome-title h4 {
-    font-size: 24px;
+    font-size: 35px;
     font-weight: 200;
     margin: 0;
 }
@@ -213,6 +215,129 @@ header {
 .welcome-title p {
     font-family: Montserrat, sans-serif;
     font-weight: 200;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
+    font-size: 20px;
     margin: 0;
+}
+
+.welcome-intro {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    text-align: center;
+    color: #474747;
+}
+
+.welcome-content {
+    height: auto;
+}
+
+.welcome-history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-img {
+    width: 90%;
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.welcome1 {
+    background-image: url(img/home/welcome/restaurant-1.jpg);
+}
+
+.welcome2 {
+    background-image: url(img/home/welcome/restaurant-2.jpg);
+}
+
+.welcome-text {
+    width: 90%;
+    font-size: 14px;
+    color: #474747;
+    text-align: justify;
+    margin: 25px 0;
+}
+
+.welcome-text p {
+    margin: 0;
+}
+
+.text-full-width {
+    display: none;
+}
+
+/*------------------------------------------------------------ OUR RESTAURANT --*/
+.our-restaurant {
+    width: 100%;
+    height: auto;
+}
+
+.our-restaurant-title {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
+}
+
+.our-restaurant-title::after {
+    position: absolute;
+    content: "";
+    width: 30%;
+    bottom: -12px;
+    left: 120px;
+    border-bottom: 1px solid #de9714;
+}
+
+.our-restaurant-title h4 {
+    margin: 0;
+    font-size: 35px;
+    font-weight: 200;
+}
+
+.our-restaurant-intro {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    text-align: center;
+    color: #474747;
+}
+
+.our-restaurant-content {
+    height: auto;
+    padding-bottom: 30px;
+}
+
+.restaurant-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 95%;
+    height: 240px;
+    margin: auto;
+    margin-bottom: 7px;
+}
+
+.restaurant1 {
+    background-image: url(img/home/our-restaurant/table.jpg);
+}
+
+.restaurant2 {
+    background-image: url(img/home/our-restaurant/food.jpg);
+}
+
+.restaurant3 {
+    background-image: url(img/home/our-restaurant/lights.jpg);
+}
+
+.restaurant4 {
+    background-image: url(img/home/our-restaurant/alcohol.jpg);
 }
