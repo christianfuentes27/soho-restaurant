@@ -967,11 +967,21 @@ iframe {
     font-weight: 200;
 }
 
+.reserve-intro {
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 15px;
+    text-align: center;
+    color: #474747;
+}
+
 .reserve-container {
     height: auto;
     width: 90%;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 25px;
     padding-bottom: 30px;
 }
 
@@ -1171,4 +1181,91 @@ td:has(> input:checked){
     color: white;
     background-color: black;
     margin-left: auto;
+}
+
+.contact-us {
+    width: 100%;
+    height: auto;
+}
+
+.contact-title {
+    margin: auto;
+    /* width: 90%; */
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
+}
+
+.contact-title::after {
+    position: absolute;
+    content: "";
+    width: 30%;
+    bottom: -12px;
+    left: 128px;
+    border-bottom: 1px solid #de9714;
+}
+
+.contact-title h4 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 200;
+}
+
+.contact-intro {
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 15px;
+    text-align: center;
+    color: #474747;
+}
+
+.contact-us-container {
+    width: 90%;
+    padding-bottom: 50px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.contact-us-container input {
+    height: auto;
+    width: 310px;
+    outline: none;
+    border: 1px solid #b6b6b6;
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.contact-us-container textarea {
+    width: 316px;
+    resize: none;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid #b6b6b6;
+}
+
+.contact-us-container input::placeholder, 
+.contact-us-container textarea::placeholder {
+    text-transform: uppercase;
+    font-family: 'Red Hat Display';
+    color: #474747;
+    padding: 5px;
+}
+
+.send-message-btn {
+    width: 150px;
+    height: 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    margin-left: auto;
+    margin-top: 25px;
 }
