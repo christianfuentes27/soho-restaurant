@@ -1044,3 +1044,131 @@ td:has(> input:checked){
     border-radius: 50%;
     transition: all .5s ease;
 }
+
+.rest-reservation {
+    width: 100%;
+    height: auto;
+}
+
+.guests {
+    width: 100%;
+    border: 1px solid #474747;
+    margin-top: 30px;
+}
+
+.guests-content {
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.guests-content h6 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.select-guests {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.guest-number-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.guest-number {
+    width: 15px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-bottom: 1px solid #474747;
+}
+
+.guests-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.substract-btn {
+    background-color: #b7b7b7;
+    margin-right: 10px;
+}
+
+.add-btn {
+    background-color: black;
+}
+
+.hour {
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+}
+
+.hour h6 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.hour-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hour-item {
+    width: 20%;
+    padding: 5px 0;
+    text-align: center;
+    position: relative;
+}
+
+.hour-item::after {
+    content: "";
+    width: 30%;
+    position: absolute;
+    left: 23px;
+    bottom: 0;
+    border-bottom: 1px solid #474747;
+}
+
+.hour-item:has(> input:checked) {
+    background-color: black;
+    color: white;
+    transition: all .5s ease;
+}
+
+.reserve-btn-container {
+    width: 100%;
+    margin-top: 45px;
+}
+
+.reserve-btn {
+    width: 150px;
+    height: 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    margin-left: auto;
+}
