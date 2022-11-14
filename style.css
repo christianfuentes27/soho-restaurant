@@ -1184,6 +1184,8 @@ td:has(> input:checked){
     margin-left: auto;
 }
 
+/*------------------------------------------------------------ RESERVE --*/
+
 .contact-us {
     width: 100%;
     height: auto;
@@ -1269,4 +1271,313 @@ td:has(> input:checked){
     background-color: black;
     margin-left: auto;
     margin-top: 25px;
+}
+
+/*-------------------------------------------------------------------------- MENU */
+.menu-hero {
+    height: 500px;
+    width: 100%;
+    background-image: url(img/menu/hero/menu-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 58% 50%;
+    position: relative;
+}
+
+.menu-hero-items {
+    position: absolute;
+    top: 100px;
+    left: 45px;
+    color: white;
+}
+
+.menu-hero-items .order-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid rgba(222, 151, 20, .5);
+    font-weight: 100;
+    font-size: 12px;
+    margin: auto;
+    transition: all .5s ease-in-out;
+}
+
+.menu-hero-items h4 {
+    font-size: 28px;
+    font-weight: 200;
+    margin: 20px 0;
+}
+
+.menu-hero-items h6 {
+    font-size: 17px;
+    font-weight: 200;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+/*------------------------------------------------------------ MAIN DISHES --*/
+.main-dishes-title {
+    margin: auto;
+    /* width: 90%; */
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
+}
+
+.main-dishes-title::after {
+    position: absolute;
+    content: "";
+    width: 30%;
+    bottom: -12px;
+    left: 128px;
+    border-bottom: 1px solid #de9714;
+}
+
+.main-dishes-title h4 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 200;
+}
+
+.main-dishes-intro {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 15px;
+    text-align: center;
+    color: #474747;
+}
+
+.main-dishes-container {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.main-dish-item {
+    height: 300px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.main-dish-img {
+    height: 70%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.main-dish-description {
+    height: 30%;
+    width: 100%;
+    text-align: center;
+    background-color: #2d2d2d;
+}
+
+.main-dish-description h6 {
+    color: #de9714;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.main-dish-description p {
+    width: 80%;
+    margin: auto;
+    color: white;
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.main-dish1 {
+    background-image: url(img/menu/main-dishes/dish-1.jpg);
+}
+
+.main-dish2 {
+    background-image: url(img/menu/main-dishes/dish-2.jpg);
+}
+
+.main-dish3 {
+    background-image: url(img/menu/main-dishes/dish-3.jpg);
+}
+
+.main-dish4 {
+    background-image: url(img/menu/main-dishes/dish-4.jpg);
+}
+
+.main-dish5 {
+    background-image: url(img/menu/main-dishes/dish-5.jpg);
+}
+
+.main-dish6 {
+    background-image: url(img/menu/main-dishes/dish-6.jpg);
+}
+
+/*------------------------------------------------------------ TASTING MENUS --*/
+.tasting-menus {
+    width: 100%;
+    height: auto;
+}
+
+.tasting-title {
+    margin: auto;
+    /* width: 90%; */
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
+}
+
+.tasting-title::after {
+    position: absolute;
+    content: "";
+    width: 30%;
+    bottom: -12px;
+    left: 128px;
+    border-bottom: 1px solid #de9714;
+}
+
+.tasting-title h4 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 200;
+}
+
+.tasting-intro {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 15px;
+    text-align: center;
+    color: #474747;
+}
+
+.tasting-container {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.tasting-item {
+    margin-bottom: 50px;
+}
+
+.tasting-item h4 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.tasting-item span {
+    color: #de9714;
+}
+
+.tasting-item img {
+    width: 280px;
+    height: 280px;
+}
+
+.tasting-item h5 {
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.tasting-item h6 {
+    margin: 10px 0;
+    color: #de9714;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.tasting-item p {
+    color: #474747;
+    font-size: 15px;
+}
+
+/*------------------------------------------------------------ GALLERY --*/
+.gallery {
+    width: 100%;
+    height: auto;
+    background-color: #eaeaea;
+}
+
+.gallery-title {
+    margin: auto;
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
+}
+
+.gallery-title::after {
+    position: absolute;
+    content: "";
+    width: 30%;
+    bottom: -12px;
+    left: 128px;
+    border-bottom: 1px solid #de9714;
+}
+
+.gallery-title h4 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 200;
+}
+
+.gallery-intro {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 15px;
+    text-align: center;
+    color: #474747;
+}
+
+.gallery-container {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.gallery-item {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 340px;
+    height: 340px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.gallery-1 {
+    background-image: url(img/menu/gallery/gallery-1.jpg);
+}
+
+.gallery-2 {
+    background-image: url(img/menu/gallery/gallery-2.jpg);
+}
+
+.gallery-3 {
+    background-image: url(img/menu/gallery/gallery-3.jpg);
+}
+
+.gallery-4 {
+    background-image: url(img/menu/gallery/gallery-4.jpg);
+}
+
+.gallery-5 {
+    background-image: url(img/menu/gallery/gallery-5.jpg);
+}
+
+.gallery-6 {
+    background-image: url(img/menu/gallery/gallery-6.jpg);
 }
