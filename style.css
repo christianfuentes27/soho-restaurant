@@ -185,30 +185,30 @@ header {
 
 .welcome-title {
     margin: auto;
-    width: 50%;
+    width: fit-content;
     text-align: center;
     position: relative;
     padding-top: 30px;
 }
 
 .welcome-title::after {
-    position: absolute;
     content: "";
-    width: 40%;
-    bottom: -12px;
-    left: 55px;
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding-top: 15px;
     border-bottom: 1px solid #de9714;
 }
 
 .welcome-title .logo {
-    height: 60px;
-    font-size: 42px;
+    height: 52px;
+    font-size: 36px;
     color: black;
     margin: 0;
 }
 
 .welcome-title h4 {
-    font-size: 35px;
+    font-size: 28px;
     font-weight: 200;
     margin: 0;
 }
@@ -216,7 +216,7 @@ header {
 .welcome-title p {
     font-family: Montserrat, sans-serif;
     font-weight: 200;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     font-size: 20px;
     margin: 0;
 }
@@ -281,24 +281,24 @@ header {
 
 .our-restaurant-title {
     margin: auto;
-    width: 90%;
+    width: fit-content;
     text-align: center;
     position: relative;
     padding-top: 30px;
 }
 
 .our-restaurant-title::after {
-    position: absolute;
     content: "";
-    width: 30%;
-    bottom: -12px;
-    left: 120px;
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding-top: 15px;
     border-bottom: 1px solid #de9714;
 }
 
 .our-restaurant-title h4 {
     margin: 0;
-    font-size: 35px;
+    font-size: 28px;
     font-weight: 200;
 }
 
@@ -377,6 +377,7 @@ header {
     width: 160px;
     height: 50px;
     background-color: black;
+    border: 1px solid rgb(124, 124, 124);
     color: #fff;
     font-size: 12px;
     font-weight: 200;
@@ -392,24 +393,24 @@ header {
 
 .owner-title {
     margin: auto;
-    width: 90%;
+    width: fit-content;
     text-align: center;
     position: relative;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .owner-title::after {
-    position: absolute;
     content: "";
-    width: 30%;
-    bottom: -12px;
-    left: 115px;
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding-top: 15px;
     border-bottom: 1px solid #de9714;
 }
 
 .owner-title h4 {
     margin: 0;
-    font-size: 35px;
+    font-size: 28px;
     font-weight: 200;
 }
 
@@ -631,18 +632,18 @@ footer {
 
 .cooking-title {
     margin: auto;
-    width: 90%;
+    width: fit-content;
     text-align: center;
     position: relative;
     padding-top: 30px;
 }
 
 .cooking-title::after {
-    position: absolute;
     content: "";
-    width: 30%;
-    bottom: -12px;
-    left: 115px;
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding-top: 15px;
     border-bottom: 1px solid #de9714;
 }
 
@@ -720,18 +721,18 @@ footer {
 
 .chef-title {
     margin: auto;
-    width: 90%;
+    width: fit-content;
     text-align: center;
     position: relative;
     padding-top: 30px;
 }
 
 .chef-title::after {
-    position: absolute;
     content: "";
-    width: 30%;
-    bottom: -12px;
-    left: 110px;
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding-top: 15px;
     border-bottom: 1px solid #de9714;
 }
 
@@ -780,18 +781,18 @@ footer {
 
 .staff-title {
     margin: auto;
-    width: 90%;
+    width: fit-content;
     text-align: center;
     position: relative;
     padding-top: 30px;
 }
 
 .staff-title::after {
-    position: absolute;
     content: "";
-    width: 30%;
-    bottom: -12px;
-    left: 110px;
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding-top: 15px;
     border-bottom: 1px solid #de9714;
 }
 
@@ -812,6 +813,7 @@ footer {
     box-sizing: border-box;
     height: 350px;
     width: 320px;
+    margin: auto;
     margin-bottom: 50px;
 }
 
@@ -947,18 +949,18 @@ iframe {
 
 .reserve-title {
     margin: auto;
-    width: 90%;
+    width: fit-content;
     text-align: center;
     position: relative;
     padding-top: 30px;
 }
 
 .reserve-title::after {
-    position: absolute;
     content: "";
-    width: 30%;
-    bottom: -12px;
-    left: 115px;
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding-top: 15px;
     border-bottom: 1px solid #de9714;
 }
 
@@ -1193,18 +1195,18 @@ td:has(> input:checked){
 
 .contact-title {
     margin: auto;
-    /* width: 90%; */
+    width: fit-content;
     text-align: center;
     position: relative;
     padding-top: 30px;
 }
 
 .contact-title::after {
-    position: absolute;
     content: "";
-    width: 30%;
-    bottom: -12px;
-    left: 128px;
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding-top: 15px;
     border-bottom: 1px solid #de9714;
 }
 
@@ -1215,7 +1217,7 @@ td:has(> input:checked){
 }
 
 .contact-intro {
-    width: 100%;
+    width: 90%;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 25px;
@@ -1228,21 +1230,25 @@ td:has(> input:checked){
     width: 90%;
     padding-bottom: 50px;
     margin: auto;
-    box-sizing: border-box;
 }
 
 .contact-us-container input {
+    box-sizing: border-box;
+    padding: 5px;
     height: auto;
-    width: 310px;
+    width: 100%;
     outline: none;
     border: 1px solid #b6b6b6;
     font-size: 14px;
     margin-bottom: 15px;
-    padding: 5px;
+    padding: 7px;
+    color: #474747;
 }
 
 .contact-us-container textarea {
-    width: 316px;
+    box-sizing: border-box;
+    padding: 7px;
+    width: 100%;
     resize: none;
     font-size: 14px;
     outline: none;
@@ -1254,7 +1260,6 @@ td:has(> input:checked){
     text-transform: uppercase;
     font-family: 'Red Hat Display';
     color: #474747;
-    padding: 5px;
 }
 
 .send-message-btn {
@@ -1322,18 +1327,18 @@ td:has(> input:checked){
 /*------------------------------------------------------------ MAIN DISHES --*/
 .main-dishes-title {
     margin: auto;
-    /* width: 90%; */
+    width: fit-content;
     text-align: center;
     position: relative;
     padding-top: 30px;
 }
 
 .main-dishes-title::after {
-    position: absolute;
     content: "";
-    width: 30%;
-    bottom: -12px;
-    left: 128px;
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding-top: 15px;
     border-bottom: 1px solid #de9714;
 }
 
@@ -1430,18 +1435,18 @@ td:has(> input:checked){
 
 .tasting-title {
     margin: auto;
-    /* width: 90%; */
+    width: fit-content;
     text-align: center;
     position: relative;
     padding-top: 30px;
 }
 
 .tasting-title::after {
-    position: absolute;
     content: "";
-    width: 30%;
-    bottom: -12px;
-    left: 128px;
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding-top: 15px;
     border-bottom: 1px solid #de9714;
 }
 
@@ -1514,17 +1519,18 @@ td:has(> input:checked){
 
 .gallery-title {
     margin: auto;
+    width: fit-content;
     text-align: center;
     position: relative;
     padding-top: 30px;
 }
 
 .gallery-title::after {
-    position: absolute;
     content: "";
-    width: 30%;
-    bottom: -12px;
-    left: 128px;
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding-top: 15px;
     border-bottom: 1px solid #de9714;
 }
 
