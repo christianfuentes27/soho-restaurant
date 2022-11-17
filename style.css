@@ -5,7 +5,8 @@
     src: url('./logo-font/BabaPro.ttf');
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -104,7 +105,7 @@ header {
     transition: all .5s ease-in-out;
 }
 
-.menu-btn-bars::before, 
+.menu-btn-bars::before,
 .menu-btn-bars::after {
     content: '';
     position: absolute;
@@ -566,7 +567,7 @@ footer {
     padding: 0 15px;
 }
 
-.copy-item:nth-child(1), 
+.copy-item:nth-child(1),
 .copy-item:nth-child(2) {
     border-right: 1px solid rgba(255, 255, 255, .5);
 }
@@ -1051,7 +1052,7 @@ input {
     margin: 0;
 }
 
-td:has(> input:checked){
+td:has(> input:checked) {
     background-color: black;
     color: #fff;
     border-radius: 50%;
@@ -1255,7 +1256,7 @@ td:has(> input:checked){
     border: 1px solid #b6b6b6;
 }
 
-.contact-us-container input::placeholder, 
+.contact-us-container input::placeholder,
 .contact-us-container textarea::placeholder {
     text-transform: uppercase;
     font-family: 'Red Hat Display';
@@ -1586,4 +1587,34 @@ td:has(> input:checked){
 
 .gallery-6 {
     background-image: url(img/menu/gallery/gallery-6.jpg);
+}
+
+@media only screen and (min-width: 800px) {
+    /* ---------------------------------------------------------------------------------- HOME */
+    /* --------------------------------------NAVBAR ROW */
+    .menu-btn {
+        display: none;
+    }
+
+    .navbar {
+        position: static;
+    }
+    
+    .menu-items {
+        flex-direction: row;
+        align-items: center;
+        position: static;
+        background: none;
+        height: 80px;
+        width: 100%;
+        transition: none;
+    }
+
+    .navbar ul li {
+        margin: 0 40px;
+    }
+    
+    .navbar a {
+        display: initial;
+    }
 }
