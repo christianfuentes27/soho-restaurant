@@ -141,7 +141,6 @@ header {
 
 .hero-items {
     color: white;
-    margin-left: 30px;
     position: absolute;
     text-align: right;
     margin-top: 20px;
@@ -167,10 +166,12 @@ header {
     letter-spacing: 1px;
     text-transform: uppercase;
     border: 1px solid rgba(222, 151, 20, .5);
+    text-shadow: 1px 1px 8px black;
     font-weight: 100;
     font-size: 12px;
     margin-left: auto;
     transition: all .5s ease-in-out;
+    cursor: pointer;
 }
 
 .order-btn:hover {
@@ -1589,32 +1590,209 @@ td:has(> input:checked) {
     background-image: url(img/menu/gallery/gallery-6.jpg);
 }
 
+@media only screen and (min-width: 600px) {
+    /* ---------------------------------------------------------------------------------- HOME */
+    /* -------------------------------------- WELCOME */
+    .welcome-img {
+        height: 350px;
+    }
+}
+
 @media only screen and (min-width: 800px) {
     /* ---------------------------------------------------------------------------------- HOME */
-    /* --------------------------------------NAVBAR ROW */
+    /* --------------------------------------HERO*/
     .menu-btn {
         display: none;
     }
 
     .navbar {
         position: static;
+        width: 70%;
+    }
+
+    .logo {
+        font-size: 60px;
+        margin-left: 15px;
     }
     
     .menu-items {
         flex-direction: row;
         align-items: center;
+        justify-content: space-around;
         position: static;
         background: none;
-        height: 80px;
+        height: 100%;
         width: 100%;
         transition: none;
-    }
-
-    .navbar ul li {
-        margin: 0 40px;
+        font-size: 18px;
     }
     
     .navbar a {
         display: initial;
+    }
+
+    .hero-items {
+        margin-top: 100px;
+        right: 50px;
+    }
+    
+    .hero-items h4 {
+        font-size: 30px;
+    }
+    
+    .hero-items h6 {
+        font-size: 18px;
+    }
+    
+    .hero-items .order-btn {
+        width: 200px;
+        height: 60px;
+        font-size: 14px;
+        border: 1px solid #de9714;
+    }
+
+    /* -------------------------------------- WELCOME */
+    .welcome-title .logo {
+        height: 70px;
+        font-size: 48px;
+    }
+    
+    .welcome-title h4 {
+        font-size: 36px;
+    }
+    
+    .welcome-title p {
+        font-size: 25px;
+    }
+
+    .welcome-intro {
+        width: 50%;
+    }
+
+    .welcome-content {
+        margin: 40px 0;
+    }
+
+    .welcome-history {
+        flex-direction: row;
+    }
+
+    .welcome-img {
+        flex: 1;
+    }
+
+    .welcome2 {
+        order: 1;
+    }
+
+    .welcome-text {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .welcome-text p {
+        width: 90%;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    /* ---------------------------------------------------------------------------------- HOME */
+    /* --------------------------------------HERO*/
+    .menu-items {
+        font-size: 20px;
+    }
+
+    header {
+        height: 100px;
+    }
+
+    .navbar {
+        width: 50%;
+    }
+
+    .logo {
+        font-size: 70px;
+        margin-left: 30px;
+    }
+
+    .hero-items {
+        margin-top: 40px;
+        right: 90px;
+    }
+    
+    .hero-items h4 {
+        font-size: 40px;
+    }
+    
+    .hero-items h6 {
+        font-size: 24px;
+    }
+    
+    .hero-items .order-btn {
+        width: 250px;
+        height: 70px;
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+
+    /* -------------------------------------- WELCOME */
+    .welcome-title {
+        padding-top: 60px;
+    }
+
+    .welcome-title .logo {
+        height: 85px;
+        font-size: 60px;
+    }
+
+    .welcome-title::after {
+        content: "";
+        padding-top: 22px;
+    }
+    
+    .welcome-title h4 {
+        font-size: 48px;
+    }
+    
+    .welcome-title p {
+        font-size: 32px;
+    }
+
+    .welcome-intro {
+        font-size: 20px;
+        font-weight: 200;
+    }
+
+    .welcome-content {
+        margin: 65px 0;
+    }
+
+    .welcome-history:nth-child(1) {
+        margin-bottom: 100px;
+    }
+
+    .text-full-width {
+        display: block;
+    }
+
+    .welcome-img {
+        flex: 3;
+        height: 600px;
+    }
+
+    .welcome-text {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome-text p {
+        width: 90%;
+        font-size: 18px;
+        font-weight: 200;
+        margin: 10px 0;
     }
 }
