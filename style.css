@@ -1607,7 +1607,7 @@ td:has(> input:checked) {
 
     .navbar {
         position: static;
-        width: 70%;
+        width: 50%;
     }
 
     .logo {
@@ -1695,11 +1695,59 @@ td:has(> input:checked) {
         width: 90%;
         font-size: 16px;
     }
+
+    /* -------------------------------------- OUR RESTAURANT */
+    .our-restaurant-title h4 {
+        font-size: 36px;
+    }
+
+    .our-restaurant-intro {
+        width: 60%;
+    }
+
+    .our-restaurant-content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .restaurant-img {
+        margin: 10px;
+        width: 45%;
+        max-width: 800px;
+        padding-bottom: 25%;
+    }
+
+    /* -------------------------------------- OUR RESTAURANT */
+    .know-menu {
+        background-position: left center;
+    }
+
+    .know-content {
+        top: 80px;
+        right: 120px;
+    }
+    
+    .know-menu-text {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    
+    .view-now-btn {
+        width: 180px;
+        height: 55px;
+        font-size: 14px;
+        margin-left: auto;
+    }
 }
 
 @media only screen and (min-width: 1400px) {
     /* ---------------------------------------------------------------------------------- HOME */
     /* --------------------------------------HERO*/
+    .hero {
+        background-image: url(img/home/hero/hero-2.jpg);
+    }
+
     .menu-items {
         font-size: 20px;
     }
@@ -1719,7 +1767,9 @@ td:has(> input:checked) {
 
     .hero-items {
         margin-top: 40px;
-        right: 90px;
+        right: auto;
+        left: 30px;
+        text-align: left;
     }
     
     .hero-items h4 {
@@ -1735,6 +1785,7 @@ td:has(> input:checked) {
         height: 70px;
         font-size: 16px;
         letter-spacing: 3px;
+        margin-left: 0;
     }
 
     /* -------------------------------------- WELCOME */
@@ -1791,8 +1842,46 @@ td:has(> input:checked) {
 
     .welcome-text p {
         width: 90%;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 200;
         margin: 10px 0;
+    }
+
+    /* -------------------------------------- OUR RESTAURANT */
+    .our-restaurant-title h4 {
+        font-size: 48px;
+    }
+
+    .our-restaurant-intro {
+        width: 60%;
+        font-size: 20px;
+        font-weight: 200;
+        margin: 50px auto;
+    }
+
+    /* -------------------------------------- OUR RESTAURANT */
+    .know-menu {
+        height: 350px;
+    }
+
+    .know-menu {
+        background-position: left center;
+    }
+
+    .know-content {
+        top: 80px;
+        right: 350px;
+    }
+    
+    .know-menu-text {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+    
+    .view-now-btn {
+        width: 200px;
+        height: 60px;
+        font-size: 16px;
+        margin-left: auto;
     }
 }
