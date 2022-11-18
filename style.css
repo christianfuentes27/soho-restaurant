@@ -385,6 +385,14 @@ header {
     font-weight: 200;
     text-transform: uppercase;
     letter-spacing: 2px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.view-now-btn:hover {
+    background-color: white;
+    color: black;
+    font-weight: 400;
 }
 
 /*------------------------------------------------------------ OWNER --*/
@@ -424,9 +432,11 @@ header {
 }
 
 .owner-img {
+    box-sizing: border-box;
+    padding-bottom: 100%;
     width: 100%;
     height: 250px;
-    background-image: url(img/home/owner/owner.jpg);
+    background-image: url(img/home/owner/owner-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -1596,6 +1606,48 @@ td:has(> input:checked) {
     .welcome-img {
         height: 350px;
     }
+
+    /* -------------------------------------- OWNER */
+    .owner-content {
+        width: 90%;
+        margin-top: 40px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: top;
+    }
+    
+    .owner-img {
+        box-sizing: border-box;
+        padding-bottom: 100%;
+        width: 100%;
+        height: 250px;
+    }
+
+    .owner-container {
+        flex: 2;
+    }
+    
+    .owner-container .signature {
+        font-family: WindSong, sans-serif;
+        font-size: 30px;
+        font-weight: 300;
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    .owner-content p:nth-child(1) {
+        flex: 1;
+    }
+
+    .owner-first-p {
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .owner-content p:nth-child(2) {
+        flex: 2;
+    }
 }
 
 @media only screen and (min-width: 800px) {
@@ -1718,7 +1770,7 @@ td:has(> input:checked) {
         padding-bottom: 25%;
     }
 
-    /* -------------------------------------- OUR RESTAURANT */
+    /* -------------------------------------- DISCOVER MENU */
     .know-menu {
         background-position: left center;
     }
@@ -1738,6 +1790,48 @@ td:has(> input:checked) {
         height: 55px;
         font-size: 14px;
         margin-left: auto;
+    }
+
+    /* -------------------------------------- OWNER */
+    .owner-content {
+        width: 90%;
+        margin-top: 40px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: top;
+    }
+    
+    .owner-img {
+        box-sizing: border-box;
+        padding-bottom: 100%;
+        width: 100%;
+        height: 250px;
+    }
+
+    .owner-container {
+        flex: 2;
+    }
+    
+    .owner-container .signature {
+        font-family: WindSong, sans-serif;
+        font-size: 30px;
+        font-weight: 300;
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    .owner-content p:nth-child(1) {
+        flex: 1;
+    }
+
+    .owner-first-p {
+        padding-left: 20px;
+        padding-top: 50px;
+    }
+
+    .owner-content p:nth-child(2) {
+        flex: 2;
     }
 }
 
@@ -1852,14 +1946,18 @@ td:has(> input:checked) {
         font-size: 48px;
     }
 
+    .our-restaurant-content {
+        padding-bottom: 100px;
+    }
+
     .our-restaurant-intro {
-        width: 60%;
+        width: 50%;
         font-size: 20px;
         font-weight: 200;
         margin: 50px auto;
     }
 
-    /* -------------------------------------- OUR RESTAURANT */
+    /* -------------------------------------- DISCOVER MENU */
     .know-menu {
         height: 350px;
     }
@@ -1870,7 +1968,7 @@ td:has(> input:checked) {
 
     .know-content {
         top: 80px;
-        right: 350px;
+        right: 550px;
     }
     
     .know-menu-text {
@@ -1879,8 +1977,8 @@ td:has(> input:checked) {
     }
     
     .view-now-btn {
-        width: 200px;
-        height: 60px;
+        width: 250px;
+        height: 70px;
         font-size: 16px;
         margin-left: auto;
     }
