@@ -456,6 +456,10 @@ header {
     font-size: 15px;
 }
 
+.text-fullwidth {
+    display: none;
+}
+
 /*------------------------------------------------------------ FOOTER --*/
 footer {
     width: 100%;
@@ -464,19 +468,19 @@ footer {
     color: #fff;
 }
 
-.footer-content {
+.footer-container {
     width: 100%;
     margin: auto;
 }
 
-.footer-content .logo {
+.footer-container .logo {
     margin: 0;
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
 }
 
-.footer-content .about-us {
+.footer-container .about-us {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -488,6 +492,10 @@ footer {
     font-weight: 400;
     font-size: 20px;
     margin: 20px 0;
+}
+
+.learn {
+    display: none;
 }
 
 .about-us p {
@@ -514,15 +522,50 @@ footer {
     background-image: url(img/home/footer/location.svg);
 }
 
+.rrss {
+    display: flex;
+    color: white;
+    align-items: center;
+    align-content: center;
+    margin: 15px 0;
+}
+
+.rrss-item {
+    height: 20px;
+    width: 20px;
+    margin-right: 27px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.twitter-icon {
+    background-image: url(img/home/footer/twitter.svg);
+    width: 25px;
+}
+
+.linkedin-icon {
+    background-image: url(img/home/footer/linkedin.svg);
+}
+
+.instagram-icon {
+    background-image: url(img/home/footer/instagram.svg);
+}
+
+.facebook-icon {
+    background-image: url(img/home/footer/facebook.svg);
+}
+
 .instagram {
     text-align: center;
 }
 
 .instagram-images {
     width: 100%;
+    max-width: 360px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin: auto;
 }
 
 .instagram-img {
@@ -1625,19 +1668,11 @@ td:has(> input:checked) {
     }
 
     .owner-container {
-        flex: 2;
+        flex: 1 1 300px;
     }
-    
-    .owner-container .signature {
-        font-family: WindSong, sans-serif;
-        font-size: 30px;
-        font-weight: 300;
-        text-align: center;
-        margin: 20px 0;
-    }
-    
-    .owner-content p:nth-child(1) {
-        flex: 1;
+
+    .owner-text1 {
+        flex: 1 1 300px;
     }
 
     .owner-first-p {
@@ -1645,9 +1680,13 @@ td:has(> input:checked) {
         padding-top: 20px;
     }
 
-    .owner-content p:nth-child(2) {
-        flex: 2;
+    .owner-text2 {
+        flex: 2 2 700px;
     }
+
+    /* .owner-content p:nth-child(2) {
+        flex: 2;
+    } */
 }
 
 @media only screen and (min-width: 800px) {
@@ -1718,7 +1757,8 @@ td:has(> input:checked) {
     }
 
     .welcome-intro {
-        width: 50%;
+        width: 55%;
+        font-size: 16px;
     }
 
     .welcome-content {
@@ -1755,6 +1795,7 @@ td:has(> input:checked) {
 
     .our-restaurant-intro {
         width: 60%;
+        font-size: 16px;
     }
 
     .our-restaurant-content {
@@ -1766,8 +1807,9 @@ td:has(> input:checked) {
     .restaurant-img {
         margin: 10px;
         width: 45%;
-        max-width: 800px;
+        max-width: 650px;
         padding-bottom: 25%;
+        box-sizing: border-box;
     }
 
     /* -------------------------------------- DISCOVER MENU */
@@ -1793,6 +1835,10 @@ td:has(> input:checked) {
     }
 
     /* -------------------------------------- OWNER */
+    .owner-title h4 {
+        font-size: 36px;
+    }
+
     .owner-content {
         width: 90%;
         margin-top: 40px;
@@ -1800,6 +1846,7 @@ td:has(> input:checked) {
         display: flex;
         flex-wrap: wrap;
         align-items: top;
+        justify-content: center;
     }
     
     .owner-img {
@@ -1811,6 +1858,7 @@ td:has(> input:checked) {
 
     .owner-container {
         flex: 2;
+        max-width: 372.5px;
     }
     
     .owner-container .signature {
@@ -1820,19 +1868,93 @@ td:has(> input:checked) {
         text-align: center;
         margin: 20px 0;
     }
+
+    .owner-content p {
+        font-size: 16px;
+    }
     
     .owner-content p:nth-child(1) {
         flex: 1;
     }
 
-    .owner-first-p {
+    .owner-text1 {
+        max-width: 392.5px;
         padding-left: 20px;
         padding-top: 50px;
+        box-sizing: border-box;
     }
 
-    .owner-content p:nth-child(2) {
-        flex: 2;
+    .owner-text2 {
+        max-width: 765px;
     }
+}
+
+@media only screen and (min-width: 1100px) {
+    .footer-content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .learn {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        margin-right: 40px;
+    }
+
+    .about-us {
+        margin-right: 20px;
+    }
+
+    .learn-item {
+        font-weight: 200;
+        margin: 18px 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* -------------------------------------- OWNER */
+    .owner-text1, .owner-text2 {
+        display: none;
+    }
+
+    .owner-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: top;
+        justify-content: center;
+    }
+
+    .owner-container .signature {
+        font-size: 48px;
+        margin: 40px 0;
+    }
+    
+    .owner-img {
+        box-sizing: border-box;
+        padding-bottom: 100%;
+        width: 100%;
+        height: 250px;
+    }
+
+    .owner-container {
+        flex: 1;
+        max-width: 540px;
+    }
+
+    .text-fullwidth {
+        display: block;
+        text-align: justify;
+        margin: 15px 30px;
+        box-sizing: border-box;
+        flex: 1;
+        max-width: 540px;
+        font-size: 20px;
+        color: #474747;
+        font-weight: 200;
+        line-height: 30px;
+    }
+    
 }
 
 @media only screen and (min-width: 1400px) {
@@ -1908,6 +2030,7 @@ td:has(> input:checked) {
     .welcome-intro {
         font-size: 20px;
         font-weight: 200;
+        line-height: 30px;
     }
 
     .welcome-content {
@@ -1937,6 +2060,7 @@ td:has(> input:checked) {
     .welcome-text p {
         width: 90%;
         font-size: 20px;
+        line-height: 30px;
         font-weight: 200;
         margin: 10px 0;
     }
@@ -1955,6 +2079,7 @@ td:has(> input:checked) {
         font-size: 20px;
         font-weight: 200;
         margin: 50px auto;
+        line-height: 30px;
     }
 
     /* -------------------------------------- DISCOVER MENU */
@@ -1981,5 +2106,58 @@ td:has(> input:checked) {
         height: 70px;
         font-size: 16px;
         margin-left: auto;
+    }
+
+    /* -------------------------------------- OWNER */
+    .owner-title h4 {
+        font-size: 48px;
+    }
+
+    .owner-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: top;
+        justify-content: center;
+        margin: 90px auto;
+        padding-bottom: 0;
+    }
+
+    /* -------------------------------------- FOOTER */
+    .footer-content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-title {
+        font-size: 24px;
+    }
+
+    .learn {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        margin-right: 80px;
+    }
+
+    .instagram-images {
+        margin: 40px 0;
+    }
+
+    .about-us {
+        margin-right: 50px;
+    }
+
+    .learn-item {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    .copy {
+        font-size: 12px;
+        margin-top: 50px;
+    }
+
+    .about-us p {
+        font-size: 18px;
     }
 }
