@@ -771,6 +771,7 @@ footer {
     font-size: 25px;
     font-weight: 300;
     letter-spacing: 2px;
+    text-shadow: 2px 2px 5px black;
 }
 
 .detail-text span {
@@ -1922,6 +1923,16 @@ td:has(> input:checked) {
         font-size: 16px;
     }
 
+    /* -------------------------------------- EVERY DETAIL */
+    .every-detail {
+        background-attachment: fixed;
+    }
+
+    .detail-text {
+        left: auto;
+        right: 180px;
+        font-size: 36px;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -2275,5 +2286,14 @@ td:has(> input:checked) {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    /* -------------------------------------- EVERY DETAIL */
+    .detail-text {
+        position: absolute;
+        bottom: 55px;
+        left: auto;
+        right: 250px;
+        font-size: 60px;
     }
 }
