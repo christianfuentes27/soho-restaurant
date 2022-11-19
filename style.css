@@ -719,6 +719,13 @@ footer {
     width: 100%;
 }
 
+.cooking-text {
+    color: #474747;
+    font-size: 16px;
+    text-align: justify;
+    display: none;
+}
+
 .cooking-content p {
     font-size: 15px;
     color: #474747;
@@ -732,6 +739,8 @@ footer {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 50%;
+    box-sizing: border-box;
 }
 
 .cooking-food {
@@ -1644,6 +1653,7 @@ td:has(> input:checked) {
 }
 
 @media only screen and (min-width: 600px) {
+
     /* ---------------------------------------------------------------------------------- HOME */
     /* -------------------------------------- WELCOME */
     .welcome-img {
@@ -1659,7 +1669,7 @@ td:has(> input:checked) {
         flex-wrap: wrap;
         align-items: top;
     }
-    
+
     .owner-img {
         box-sizing: border-box;
         padding-bottom: 100%;
@@ -1690,6 +1700,7 @@ td:has(> input:checked) {
 }
 
 @media only screen and (min-width: 800px) {
+
     /* ---------------------------------------------------------------------------------- HOME */
     /* --------------------------------------HERO*/
     .menu-btn {
@@ -1705,7 +1716,7 @@ td:has(> input:checked) {
         font-size: 60px;
         margin-left: 15px;
     }
-    
+
     .menu-items {
         flex-direction: row;
         align-items: center;
@@ -1717,7 +1728,7 @@ td:has(> input:checked) {
         transition: none;
         font-size: 18px;
     }
-    
+
     .navbar a {
         display: initial;
     }
@@ -1726,15 +1737,15 @@ td:has(> input:checked) {
         margin-top: 100px;
         right: 50px;
     }
-    
+
     .hero-items h4 {
         font-size: 30px;
     }
-    
+
     .hero-items h6 {
         font-size: 18px;
     }
-    
+
     .hero-items .order-btn {
         width: 200px;
         height: 60px;
@@ -1747,11 +1758,11 @@ td:has(> input:checked) {
         height: 70px;
         font-size: 48px;
     }
-    
+
     .welcome-title h4 {
         font-size: 36px;
     }
-    
+
     .welcome-title p {
         font-size: 25px;
     }
@@ -1821,12 +1832,12 @@ td:has(> input:checked) {
         top: 80px;
         right: 120px;
     }
-    
+
     .know-menu-text {
         font-size: 26px;
         margin-bottom: 20px;
     }
-    
+
     .view-now-btn {
         width: 180px;
         height: 55px;
@@ -1848,7 +1859,7 @@ td:has(> input:checked) {
         align-items: top;
         justify-content: center;
     }
-    
+
     .owner-img {
         box-sizing: border-box;
         padding-bottom: 100%;
@@ -1860,7 +1871,7 @@ td:has(> input:checked) {
         flex: 2;
         max-width: 372.5px;
     }
-    
+
     .owner-container .signature {
         font-family: WindSong, sans-serif;
         font-size: 30px;
@@ -1872,7 +1883,7 @@ td:has(> input:checked) {
     .owner-content p {
         font-size: 16px;
     }
-    
+
     .owner-content p:nth-child(1) {
         flex: 1;
     }
@@ -1886,6 +1897,59 @@ td:has(> input:checked) {
 
     .owner-text2 {
         max-width: 765px;
+    }
+
+    /* -------------------------------------- TEAM HOME */
+    .team-items {
+        position: absolute;
+        right: auto;
+        left: 40px;
+        bottom: 40px;
+        text-align: left;
+        color: #fff;
+    }
+
+    .team-items .order-btn {
+        margin: 0;
+    }
+
+    /* -------------------------------------- MATTER OF COOKING */
+    .cooking-title h4 {
+        font-size: 36px;
+    }
+
+    .cooking-content p {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+    /* -------------------------------------- MATTER OF COOKING */
+    .cooking-title h4 {
+        font-size: 36px;
+    }
+
+    .cooking-img {
+        flex: 1 1 400px;
+        padding-bottom: 30%;
+        box-sizing: border-box;
+    }
+
+    .cooking-text {
+        display: block;
+        flex: 1 1 400px;
+        box-sizing: border-box;
+        margin: 40px;
+    }
+
+    .cooking-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .cooking-content p {
+        display: none;
     }
 }
 
@@ -1913,8 +1977,10 @@ td:has(> input:checked) {
 }
 
 @media only screen and (min-width: 1200px) {
+
     /* -------------------------------------- OWNER */
-    .owner-text1, .owner-text2 {
+    .owner-text1,
+    .owner-text2 {
         display: none;
     }
 
@@ -1929,7 +1995,7 @@ td:has(> input:checked) {
         font-size: 48px;
         margin: 40px 0;
     }
-    
+
     .owner-img {
         box-sizing: border-box;
         padding-bottom: 100%;
@@ -1954,10 +2020,10 @@ td:has(> input:checked) {
         font-weight: 200;
         line-height: 30px;
     }
-    
 }
 
 @media only screen and (min-width: 1400px) {
+
     /* ---------------------------------------------------------------------------------- HOME */
     /* --------------------------------------HERO*/
     .hero {
@@ -1987,15 +2053,15 @@ td:has(> input:checked) {
         left: 30px;
         text-align: left;
     }
-    
+
     .hero-items h4 {
         font-size: 40px;
     }
-    
+
     .hero-items h6 {
         font-size: 24px;
     }
-    
+
     .hero-items .order-btn {
         width: 250px;
         height: 70px;
@@ -2018,11 +2084,11 @@ td:has(> input:checked) {
         content: "";
         padding-top: 22px;
     }
-    
+
     .welcome-title h4 {
         font-size: 48px;
     }
-    
+
     .welcome-title p {
         font-size: 32px;
     }
@@ -2095,12 +2161,12 @@ td:has(> input:checked) {
         top: 80px;
         right: 550px;
     }
-    
+
     .know-menu-text {
         font-size: 32px;
         margin-bottom: 40px;
     }
-    
+
     .view-now-btn {
         width: 250px;
         height: 70px;
@@ -2159,5 +2225,55 @@ td:has(> input:checked) {
 
     .about-us p {
         font-size: 18px;
+    }
+
+    /* -------------------------------------- TEAM */
+    .team-items {
+        position: absolute;
+        right: auto;
+        left: 40px;
+        bottom: 40px;
+        text-align: left;
+        color: #fff;
+    }
+
+    .team-items .order-btn {
+        width: 200px;
+        height: 60px;
+        font-size: 16px;
+    }
+
+    .team-items h4 {
+        font-size: 36px;
+    }
+
+    .team-items h6 {
+        font-size: 22px;
+    }
+
+    /* -------------------------------------- MATTER OF COOKING */
+    .cooking-container {
+        padding-bottom: 100px;
+    }
+
+    .cooking-title {
+        padding: 30px 0;
+    }
+
+    .cooking-title h4 {
+        font-size: 40px;
+        padding-top: 50px;
+    }
+
+    .cooking-text {
+        margin: 40px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .staff-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
