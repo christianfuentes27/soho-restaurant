@@ -1448,11 +1448,14 @@ td:has(> input:checked) {
     height: auto;
     margin: auto;
     padding-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .main-dish-item {
     height: 300px;
-    width: 100%;
+    width: 350px;
     box-sizing: border-box;
     margin-bottom: 20px;
 }
@@ -2028,6 +2031,21 @@ td:has(> input:checked) {
         margin: 0;
         margin-bottom: 25px;
     }
+
+    /* -------------------------------------- MAIN DISHES */
+    .main-dishes-title h4 {
+        font-size: 36px;
+    }
+
+    .main-dishes-intro {
+        width: 70%;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .main-dish-item {
+        margin-bottom: 50px;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -2461,5 +2479,40 @@ td:has(> input:checked) {
         height: 65px;
         font-size: 16px;
         margin-left: 0;
+    }
+
+    /* -------------------------------------- MAIN DISHES */
+    .main-dishes-title {
+        padding-top: 60px;
+    }
+
+    .main-dishes-title h4 {
+        font-size: 48px;
+    }
+
+    .main-dishes-intro {
+        width: 55%;
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 40px;
+    }
+
+    .main-dishes-container {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .main-dish-item {
+        height: 400px;
+        width: 500px;
+    }
+ 
+    .main-dish-description h6 {
+        padding: 15px 0;
+        font-size: 20px;
+    }
+    
+    .main-dish-description p {
+        font-size: 15px;
     }
 }
