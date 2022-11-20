@@ -170,7 +170,7 @@ header {
     font-weight: 100;
     font-size: 12px;
     margin-left: auto;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
     cursor: pointer;
 }
 
@@ -664,7 +664,8 @@ footer {
     font-weight: 100;
     font-size: 12px;
     margin: auto;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
 }
 
 .team-items h4 {
@@ -873,18 +874,30 @@ footer {
     font-weight: 200;
 }
 
+.staff-intro {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 15px;
+    text-align: center;
+    color: #474747;
+}
+
 .staff-container {
     width: 90%;
     margin: auto;
     margin-top: 50px;
     padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .staff-item {
     box-sizing: border-box;
     height: 350px;
     width: 320px;
-    margin: auto;
     margin-bottom: 50px;
 }
 
@@ -955,9 +968,9 @@ footer {
 }
 
 .down-part img {
-    color: #fff;
     height: 20px;
     margin: 0 20px;
+    cursor: pointer;
 }
 
 /*-------------------------------------------------------------------------- CONTACT */
@@ -1985,6 +1998,17 @@ td:has(> input:checked) {
     .chef-container .chef-signature {
         display: none;
     }
+
+    /* -------------------------------------- STAFF */
+    .staff-title h4 {
+        font-size: 36px;
+    }
+
+    .staff-intro {
+        font-size: 16px;
+        line-height: 25px;
+        width: 70%;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -2344,12 +2368,6 @@ td:has(> input:checked) {
         line-height: 30px;
     }
 
-    .staff-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
     /* -------------------------------------- EVERY DETAIL */
     .detail-text {
         position: absolute;
@@ -2381,5 +2399,21 @@ td:has(> input:checked) {
     .chef-signature {
         font-size: 60px;
         margin: 50px 0;
+    }
+
+    /* -------------------------------------- STAFF */
+    .staff-title h4 {
+        font-size: 48px;
+    }
+
+    .staff-intro {
+        font-size: 20px;
+        line-height: 30px;
+        max-width: 60%;
+        margin-top: 40px;
+    }
+
+    .staff-container {
+        margin: 100px auto;
     }
 }
