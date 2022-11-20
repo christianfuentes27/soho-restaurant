@@ -1607,7 +1607,7 @@ td:has(> input:checked) {
 .gallery {
     width: 100%;
     height: auto;
-    background-color: #eaeaea;
+    background-color: #f7f3ea;
 }
 
 .gallery-title {
@@ -1646,15 +1646,19 @@ td:has(> input:checked) {
 .gallery-container {
     width: 100%;
     padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.gallery-item {
-    margin: auto;
-    margin-bottom: 10px;
-    width: 340px;
-    height: 340px;
-    background-size: contain;
-    background-repeat: no-repeat;
+.gallery-container img {
+    width: 32%;
+    margin: 5px;
+    min-width: 340px;
+}
+
+.gallery-container img:hover {
+    background: rgba(0, 0, 0, .5);
 }
 
 .gallery-1 {
@@ -1681,9 +1685,20 @@ td:has(> input:checked) {
     background-image: url(img/menu/gallery/gallery-6.jpg);
 }
 
+.gallery-7 {
+    background-image: url(img/menu/gallery/gallery-7.jpg);
+}
+
+.gallery-8 {
+    background-image: url(img/menu/gallery/gallery-8.jpg);
+}
+
+.gallery-9 {
+    background-image: url(img/menu/gallery/gallery-9.jpg);
+}
+
 @media only screen and (min-width: 600px) {
 
-    /* ---------------------------------------------------------------------------------- HOME */
     /* -------------------------------------- WELCOME */
     .welcome-img {
         height: 350px;
@@ -2080,6 +2095,17 @@ td:has(> input:checked) {
     .tasting-item p {
         color: #474747;
         font-size: 16px;
+    }
+
+    /* -------------------------------------- GALLERY */
+    .gallery-title h4 {
+        font-size: 36px;
+    }
+    
+    .gallery-intro {
+        width: 70%;
+        font-size: 16px;
+        line-height: 25px;
     }
 }
 
@@ -2583,5 +2609,26 @@ td:has(> input:checked) {
     
     .tasting-item p {
         font-size: 18px;
+    }
+
+    /* -------------------------------------- GALLERY */
+    .gallery-title {
+        padding-top: 60px;
+    }
+
+    .gallery-title h4 {
+        font-size: 48px;
+    }
+    
+    .gallery-intro {
+        width: 50%;
+        font-size: 20px;
+        line-height: 30px;
+        margin: 40px auto;
+    }
+
+    .gallery-container {
+        padding-top: 20px;
+        padding-bottom: 140px;
     }
 }
