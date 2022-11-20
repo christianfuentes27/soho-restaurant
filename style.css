@@ -1657,46 +1657,6 @@ td:has(> input:checked) {
     min-width: 340px;
 }
 
-.gallery-container img:hover {
-    background: rgba(0, 0, 0, .5);
-}
-
-.gallery-1 {
-    background-image: url(img/menu/gallery/gallery-1.jpg);
-}
-
-.gallery-2 {
-    background-image: url(img/menu/gallery/gallery-2.jpg);
-}
-
-.gallery-3 {
-    background-image: url(img/menu/gallery/gallery-3.jpg);
-}
-
-.gallery-4 {
-    background-image: url(img/menu/gallery/gallery-4.jpg);
-}
-
-.gallery-5 {
-    background-image: url(img/menu/gallery/gallery-5.jpg);
-}
-
-.gallery-6 {
-    background-image: url(img/menu/gallery/gallery-6.jpg);
-}
-
-.gallery-7 {
-    background-image: url(img/menu/gallery/gallery-7.jpg);
-}
-
-.gallery-8 {
-    background-image: url(img/menu/gallery/gallery-8.jpg);
-}
-
-.gallery-9 {
-    background-image: url(img/menu/gallery/gallery-9.jpg);
-}
-
 @media only screen and (min-width: 600px) {
 
     /* -------------------------------------- WELCOME */
@@ -2106,6 +2066,21 @@ td:has(> input:checked) {
         width: 70%;
         font-size: 16px;
         line-height: 25px;
+    }
+
+    /* -------------------------------------- CONTACT HERO */
+    .contact-items .order-btn {
+        width: 170px;
+        height: 50px;
+        font-size: 13px;
+    }
+    
+    .contact-items h4 {
+        font-size: 32px;
+    }
+    
+    .contact-items h6 {
+        font-size: 20px;
     }
 }
 
@@ -2630,5 +2605,30 @@ td:has(> input:checked) {
     .gallery-container {
         padding-top: 20px;
         padding-bottom: 140px;
+    }
+
+    /* -------------------------------------- CONTACT HERO */
+    .contact-hero {
+        background-position: center 80%;
+    }
+
+    .contact-items {
+        width: fit-content;
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    .contact-items .order-btn {
+        width: 200px;
+        height: 60px;
+        font-size: 16px;
+    }
+    
+    .contact-items h4 {
+        font-size: 36px;
+    }
+    
+    .contact-items h6 {
+        font-size: 22px;
     }
 }
