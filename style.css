@@ -1451,6 +1451,7 @@ td:has(> input:checked) {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    transition: all .3s ease-in-out;
 }
 
 .main-dish-item {
@@ -1458,6 +1459,7 @@ td:has(> input:checked) {
     width: 350px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    transition: all .3s ease-in-out;
 }
 
 .main-dish-img {
@@ -1560,6 +1562,9 @@ td:has(> input:checked) {
     margin: auto;
     text-align: center;
     padding-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .tasting-item {
@@ -2046,6 +2051,36 @@ td:has(> input:checked) {
     .main-dish-item {
         margin-bottom: 50px;
     }
+
+    /* -------------------------------------- TASTING MENUS */
+    .tasting-title h4 {
+        font-size: 36px;
+    }
+    
+    .tasting-intro {
+        width: 70%;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .tasting-item h4 {
+        font-size: 24px;
+    }
+    
+    .tasting-item h5 {
+        margin: 20px 0;
+        font-size: 22px;
+    }
+    
+    .tasting-item h6 {
+        margin: 15px 0;
+        font-size: 18px;
+    }
+    
+    .tasting-item p {
+        color: #474747;
+        font-size: 16px;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -2514,5 +2549,39 @@ td:has(> input:checked) {
     
     .main-dish-description p {
         font-size: 15px;
+    }
+
+    /* -------------------------------------- TASTING MENUS */
+    .tasting-title h4 {
+        font-size: 48px;
+    }
+    
+    .tasting-intro {
+        width: 55%;
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 40px;
+    }
+
+    .tasting-item {
+        width: 35%;
+    }
+
+    .tasting-item h4 {
+        font-size: 28px;
+    }
+    
+    .tasting-item h5 {
+        margin: 20px 0;
+        font-size: 24px;
+    }
+    
+    .tasting-item h6 {
+        margin: 15px 0;
+        font-size: 20px;
+    }
+    
+    .tasting-item p {
+        font-size: 18px;
     }
 }
