@@ -1392,7 +1392,8 @@ td:has(> input:checked) {
     font-weight: 100;
     font-size: 12px;
     margin: auto;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
 }
 
 .menu-hero-items h4 {
@@ -1722,7 +1723,7 @@ td:has(> input:checked) {
     .chef-information {
         line-height: 25px;
     }
-    
+
     .chef-signature {
         font-size: 50px;
     }
@@ -1977,7 +1978,7 @@ td:has(> input:checked) {
     .chef-container {
         flex: 1 1 350px;
     }
-    
+
     .chef-information {
         font-size: 16px;
         flex: 1 1 350px;
@@ -1985,7 +1986,7 @@ td:has(> input:checked) {
         margin-right: 20px;
         margin-bottom: 0;
     }
-    
+
     .chef-signature {
         font-size: 40px;
     }
@@ -2009,9 +2010,28 @@ td:has(> input:checked) {
         line-height: 25px;
         width: 70%;
     }
+
+    /* -------------------------------------- MENU HERO */
+    .menu-hero {
+        background-position: center 20%;
+    }
+
+    .menu-hero-items h4 {
+        font-size: 28px;
+        font-weight: 200;
+        margin: 20px 0;
+    }
+
+    .menu-hero-items h6 {
+        font-size: 17px;
+        font-weight: 200;
+        margin: 0;
+        margin-bottom: 25px;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
+
     /* -------------------------------------- MATTER OF COOKING */
     .cooking-title h4 {
         font-size: 36px;
@@ -2112,7 +2132,7 @@ td:has(> input:checked) {
     .chef-title h4 {
         font-size: 36px;
     }
-    
+
     .chef-signature {
         font-size: 50px;
         margin: 50px 0;
@@ -2376,7 +2396,7 @@ td:has(> input:checked) {
         right: 250px;
         font-size: 60px;
     }
-    
+
     /* -------------------------------------- CHEF */
     .chef-title {
         padding-top: 80px;
@@ -2395,7 +2415,7 @@ td:has(> input:checked) {
         line-height: 30px;
         margin-right: 60px;
     }
-    
+
     .chef-signature {
         font-size: 60px;
         margin: 50px 0;
@@ -2415,5 +2435,31 @@ td:has(> input:checked) {
 
     .staff-container {
         margin: 100px auto;
+    }
+
+    /* -------------------------------------- MENU HERO */
+    .menu-hero {
+        height: 800px;
+    }
+
+    .menu-hero-items {
+        top: 150px;
+        left: 45px;
+    }
+
+    .menu-hero-items h4 {
+        font-size: 48px;
+    }
+
+    .menu-hero-items h6 {
+        font-size: 28px;
+        margin-bottom: 35px;
+    }
+
+    .menu-hero-items .order-btn {
+        width: 230px;
+        height: 65px;
+        font-size: 16px;
+        margin-left: 0;
     }
 }
