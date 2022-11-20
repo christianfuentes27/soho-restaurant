@@ -1066,16 +1066,21 @@ iframe {
 
 .reserve-container {
     height: auto;
-    width: 90%;
+    width: 100%;
     margin: auto;
     margin-top: 25px;
     padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .calendar {
-    width: 100%;
+    width: 324px;
     height: 100%;
     border: 1px solid #474747;
+    margin: 0 15px;
 }
 
 .calendar-date {
@@ -1124,6 +1129,8 @@ iframe {
     text-align: center;
     width: 37px;
     height: 37px;
+    /* width: 12.802768166089965vw;
+    height: 11vw; */
 }
 
 .calendar-table .light-gray {
@@ -1142,9 +1149,15 @@ td:has(> input:checked) {
     transition: all .5s ease;
 }
 
+td:has(> input) {
+    cursor: pointer;
+}
+
 .rest-reservation {
-    width: 100%;
+    width: 324px;
     height: auto;
+    box-sizing: border-box;
+    margin: 0 15px;
 }
 
 .guests {
@@ -1197,6 +1210,7 @@ td:has(> input:checked) {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .substract-btn {
@@ -1232,15 +1246,15 @@ td:has(> input:checked) {
     width: 20%;
     padding: 5px 0;
     text-align: center;
-    position: relative;
+    cursor: pointer;
 }
 
 .hour-item::after {
     content: "";
-    width: 30%;
-    position: absolute;
-    left: 23px;
-    bottom: 0;
+    display: block;
+    margin: auto;
+    padding-top: 5px;
+    width: 25%;
     border-bottom: 1px solid #474747;
 }
 
@@ -1268,6 +1282,7 @@ td:has(> input:checked) {
     color: white;
     background-color: black;
     margin-left: auto;
+    cursor: pointer;
 }
 
 /*------------------------------------------------------------ RESERVE --*/
@@ -2031,7 +2046,7 @@ td:has(> input:checked) {
     .tasting-title h4 {
         font-size: 36px;
     }
-    
+
     .tasting-intro {
         width: 70%;
         font-size: 16px;
@@ -2041,17 +2056,17 @@ td:has(> input:checked) {
     .tasting-item h4 {
         font-size: 24px;
     }
-    
+
     .tasting-item h5 {
         margin: 20px 0;
         font-size: 22px;
     }
-    
+
     .tasting-item h6 {
         margin: 15px 0;
         font-size: 18px;
     }
-    
+
     .tasting-item p {
         color: #474747;
         font-size: 16px;
@@ -2061,7 +2076,7 @@ td:has(> input:checked) {
     .gallery-title h4 {
         font-size: 36px;
     }
-    
+
     .gallery-intro {
         width: 70%;
         font-size: 16px;
@@ -2074,13 +2089,24 @@ td:has(> input:checked) {
         height: 50px;
         font-size: 13px;
     }
-    
+
     .contact-items h4 {
         font-size: 32px;
     }
-    
+
     .contact-items h6 {
         font-size: 20px;
+    }
+
+    /* -------------------------------------- RESERVE */
+    .reserve-title h4 {
+        font-size: 36px;
+    }
+
+    .reserve-intro {
+        width: 70%;
+        font-size: 16px;
+        line-height: 25px;
     }
 }
 
@@ -2190,6 +2216,75 @@ td:has(> input:checked) {
     .chef-signature {
         font-size: 50px;
         margin: 50px 0;
+    }
+
+    /* -------------------------------------- RESERVE */
+    .reserve-container {
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+
+    .calendar {
+        width: 500px;
+        margin: 0 30px;
+    }
+
+    .rest-reservation {
+        width: 500px;
+        margin: 0 30px;
+    }
+
+    .calendar-date {
+        height: 60px;
+    }
+
+    .calendar-date p {
+        font-size: 18px;
+        padding: 20px 10px;
+    }
+
+    .month img {
+        height: 20px;
+    }
+
+    .current-month {
+        font-size: 18px;
+    }
+
+    .calendar-table td {
+        width: 55px;
+        height: 55px;
+        font-size: 18px;
+    }
+
+    .guests-content h6 {
+        font-size: 18px;
+    }
+
+    .guest-number {
+        font-size: 18px;
+    }
+
+    .guests-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+
+    .hour-item {
+        font-size: 18px;
+    }
+
+    .hour h6 {
+        font-size: 18px;
+    }
+
+    .reserve-btn {
+        width: 200px;
+        height: 60px;
+        font-weight: 100;
+        font-size: 14px;
+        margin: auto;
     }
 }
 
@@ -2542,12 +2637,12 @@ td:has(> input:checked) {
         height: 400px;
         width: 500px;
     }
- 
+
     .main-dish-description h6 {
         padding: 15px 0;
         font-size: 20px;
     }
-    
+
     .main-dish-description p {
         font-size: 15px;
     }
@@ -2556,7 +2651,7 @@ td:has(> input:checked) {
     .tasting-title h4 {
         font-size: 48px;
     }
-    
+
     .tasting-intro {
         width: 55%;
         font-size: 20px;
@@ -2571,17 +2666,17 @@ td:has(> input:checked) {
     .tasting-item h4 {
         font-size: 28px;
     }
-    
+
     .tasting-item h5 {
         margin: 20px 0;
         font-size: 24px;
     }
-    
+
     .tasting-item h6 {
         margin: 15px 0;
         font-size: 20px;
     }
-    
+
     .tasting-item p {
         font-size: 18px;
     }
@@ -2594,7 +2689,7 @@ td:has(> input:checked) {
     .gallery-title h4 {
         font-size: 48px;
     }
-    
+
     .gallery-intro {
         width: 50%;
         font-size: 20px;
@@ -2623,12 +2718,27 @@ td:has(> input:checked) {
         height: 60px;
         font-size: 16px;
     }
-    
+
     .contact-items h4 {
         font-size: 36px;
     }
-    
+
     .contact-items h6 {
         font-size: 22px;
+    }
+
+    /* -------------------------------------- RESERVE */
+    .reserve-title {
+        padding-top: 60px;
+    }
+
+    .reserve-title h4 {
+        font-size: 48px;
+    }
+
+    .reserve-intro {
+        width: 50%;
+        font-size: 20px;
+        line-height: 30px;
     }
 }
